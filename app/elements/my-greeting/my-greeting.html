@@ -1,9 +1,8 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
-<link rel="import" href="../../bower_components/paper-styles/typography.html">
 
 <dom-module id="my-greeting">
   <template>
-    <h1 class="page-title">{{greeting}}</h1>
+    <h1>{{greeting}}</h1>
     <label for="greeting-input">Update  title:</label>
     <!-- Listens for "input" event and sets greeting to <input>.value -->
     <input id="greeting-input" value="{{greeting::input}}">

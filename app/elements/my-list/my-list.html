@@ -13,16 +13,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <dom-module id="my-list">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
-
-      span {
-        @apply(--paper-font-body1);
-      }
-    </style>
-
+    <p class="subhead">{{title}}</p>
     <ul>
       <template is="dom-repeat" items="{{items}}">
         <li><span>{{item}}</span></li>
@@ -38,6 +29,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         is: 'my-list',
 
         properties: {
+          title:{
+            value:"default value",
+            type: String
+          },
           items: {
             type: Array,
             notify: true
