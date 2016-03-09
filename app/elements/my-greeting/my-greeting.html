@@ -3,16 +3,6 @@
 
 <dom-module id="my-greeting">
   <template>
-    <style include="shared-styles">
-      :host {
-        display: block;
-      }
-      span,
-      input {
-        @apply(--paper-font-body2);
-      }
-    </style>
-
     <h1 class="page-title">{{greeting}}</h1>
     <label for="greeting-input">Update  title:</label>
     <!-- Listens for "input" event and sets greeting to <input>.value -->
